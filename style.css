@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bg--color-1: #18293b5d;
+    --bg-color-2: #18293bcc;
+}
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.screen {
+    background-image: url(images/d.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+}
+
+.modal {
+    display: none;
+    width: 500px;
+    height: 500px;
+    background-color: var(--bg--color-1);
+    border-radius: 12px;
+}
+
+.modal h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.modal #list {
+    margin: 20px;
+}
+
+.modal #list li {
+    list-style-type: none;
+}
+
+.result {
+    border-radius: 12px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.rightside {
+    color: #fff;
+    width: 400px;
+    background-color: var(--bg--color-1);
+    padding: 50px;
+}
+
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.rightside input {
+    background-color: var(--bg--color-1);
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 7px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+
+input[value = "Cadastrar"], input[value = "Entrar"] {
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: var(--bg--color-1);
+}
+input[value = "Cadastrar"]:hover {
+    background-color: var(--bg-color-2);
+}
+a {
+    color: #a8848e;
+}
+
+.error {
+    font-size: 11px;
+    background-color: #8B0000;
+    color:#fff;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    .rightside {
+        width: 100%;
+    }
+}

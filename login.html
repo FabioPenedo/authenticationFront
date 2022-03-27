@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulario</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="modal">
+            <h2>Lista de Emails</h2>
+            <div id="list"></div>
+        </div>
+        <div class="rightside">
+            <h1>Entrar</h1>
+            <div class="validator" identifier="login">
+                <label>
+                    Seu e-mail:<br/>
+                    <input type="text" name="email" id="email--login" data-rules="required|email">
+                </label>
+                <label>
+                    Sua Senha:<br/>
+                    <input type="password" name="password" id="senha--login" data-rules="required|min=6">
+                </label>
+                <label>
+                    <input type="submit" id="submit--login" value="Entrar">
+                </label>
+            </div>
+            <div>
+                Criar uma conta <a href="register.html">Registrar</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
